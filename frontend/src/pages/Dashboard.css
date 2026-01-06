@@ -1,0 +1,119 @@
+.dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dashboard-header h1 {
+    color: #667eea;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.user-info button {
+    padding: 8px 16px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.dashboard-nav button {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dashboard-nav button:hover {
+    background: #5568d3;
+}
+
+.credentials-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.credential-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.credential-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.credential-card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.credential-card p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.qr-code {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.qr-code img {
+    max-width: 150px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background: white;
+}
+
+.credential-card button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.credential-card button:hover {
+    background: #5568d3;
+}

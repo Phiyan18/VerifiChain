@@ -1,0 +1,33 @@
+{
+  "name": "verifichain",
+  "version": "1.0.0",
+  "description": "Blockchain-based credential verification system",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "ipfs-http-client": "^55.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.555.0",
+    "mongoose": "^8.0.3",
+    "qr-scanner": "^1.4.2",
+    "qrcode": "^1.5.3",
+    "react-router-dom": "^7.9.6",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "autoprefixer": "^10.4.22",
+    "nodemon": "^3.0.2",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "tailwindcss": "^4.1.17"
+  }
+}

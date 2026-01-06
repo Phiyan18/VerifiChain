@@ -1,0 +1,47 @@
+{
+  "name": "verifichain-frontend",
+  "version": "1.0.0",
+  "description": "VerifiChain Frontend - Blockchain-based credential verification system",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.13.2",
+    "ipfs-http-client": "^55.0.0",
+    "lucide-react": "^0.555.0",
+    "qr-scanner": "^1.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.6",
+    "react-scripts": "5.0.1",
+    "web3": "^4.16.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@tailwindcss/postcss": "^4.1.17",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  }
+}
