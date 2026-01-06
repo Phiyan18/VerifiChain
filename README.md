@@ -1,4 +1,5 @@
 ## VerifiChain
+<img width="800" height="800" alt="logo - Copy" src="https://github.com/user-attachments/assets/8b77bddb-face-4ed3-b955-af829178e16b" />
 
 VerifiChain is a full‑stack dApp for **issuing and verifying academic credentials** using **Ethereum smart contracts**, **IPFS**, and a **MongoDB/Node.js/React** stack.  
 Universities (or other issuers) can create tamper‑evident credentials, and anyone with the credential ID or QR code can verify them on‑chain.
@@ -30,52 +31,16 @@ Universities (or other issuers) can create tamper‑evident credentials, and any
 
 VerifiChain is organized into three main layers: **Frontend (React)**, **Backend API (Node/Express)**, and **Blockchain + Storage (Ethereum + IPFS + MongoDB)**.
 
-### Logical Architecture
+### 
 
-```text
-                   +---------------------------+
-                   |        Frontend (SPA)     |
-                   |  React + React Router     |
-                   |  Login / Dashboard /      |
-                   |  Issue / Verify pages     |
-                   +-------------+-------------+
-                                 |
-                       HTTPS / JSON (REST)
-                                 |
-                   +-------------v-------------+
-                   |        Backend API        |
-                   |  Node.js + Express        |
-                   |                           |
-                   |  Routes:                  |
-                   |    /api/auth/*            |
-                   |    /api/credentials/*     |
-                   |    /api/verify/*          |
-                   |                           |
-                   |  Services:                |
-                   |    blockchain.js (Web3)   |
-                   |    ipfs.js (IPFS client)  |
-                   +------+------+-------------+
-                          |      |
-          Mongoose ODM    |      |  IPFS HTTP client
-                          |      |
-             +------------v-+  +--v------------------+
-             |  MongoDB     |  |      IPFS / Gateway |
-             |  (verifichain|  |  or fallback hashes |
-             +--------------+  +---------------------+
 
-                          |
-                   Web3 / JSON‑RPC
-                          |
-                   +------v-----------------------+
-                   |    Ethereum Network          |
-                   |  (Ganache / Testnet / Main)  |
-                   |                               |
-                   |  Smart Contract:              |
-                   |    CredentialRegistry.sol     |
-                   +-------------------------------+
-```
+Logical Architecture
 
-### Data Flow
+### Logic Flow
+
+![logic-flow](https://github.com/user-attachments/assets/f1832820-16da-4c5f-9265-7ceb1e3de360)
+
+---
 
 - **Issuing a credential**
   1. Admin logs in on the React frontend and receives a JWT.
@@ -358,5 +323,9 @@ Common checks:
 - Richer IPFS document schema with signed PDFs.
 - Multi‑network support (e.g., Polygon, L2s).
 - Audit‑grade contract security review and formal verification.
+---
 
+## MVP Build
+
+https://github.com/user-attachments/assets/d6dff106-3244-4b8a-84b8-bb9cd8574632
 
