@@ -31,10 +31,9 @@ Universities (or other issuers) can create tamper‑evident credentials, and any
 
 VerifiChain is organized into three main layers: **Frontend (React)**, **Backend API (Node/Express)**, and **Blockchain + Storage (Ethereum + IPFS + MongoDB)**.
 
-### 
+<img width="1280" height="683" alt="Gemini_Generated_Image_g2vmm8g2vmm8g2vm-Photoroom" src="https://github.com/user-attachments/assets/4e1ca272-a0a1-4d0b-9b34-f559a5138594" />
 
-
-Logical Architecture
+---
 
 ### Logic Flow
 
@@ -328,4 +327,5 @@ Common checks:
 ## MVP Build
 
 https://github.com/user-attachments/assets/d6dff106-3244-4b8a-84b8-bb9cd8574632
+
 
